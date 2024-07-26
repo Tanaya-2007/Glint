@@ -24,7 +24,7 @@ line-height: 2.5rem;
     background-position: center;
     background-size: cover;
     width:100%;
-    height:100vh;
+    height:auto;
 }
 .header{
     display:flex;
@@ -172,9 +172,11 @@ h1{
 .about-info h3,
 .counter h3{
     font-weight: 700;
+    font-size: 1.6rem;
     letter-spacing: 2px;
 }
-.about-info h1{
+.about-info h1
+{
     color:#fff;
     font-size: 7.5rem;
     margin-top:10px;
@@ -220,8 +222,56 @@ hr{
     margin-top:1.4vw;
     margin-left:9vw;
 }
-
-
+/* Services */
+#Services{
+    padding:8% 5%;
+}
+.service h3{
+    font-size: 1.6rem;
+    letter-spacing: .4rem;
+    color: #39b54a;
+    font-weight: 700;
+    text-align: center;
+}
+.service h1{
+    text-align: center;
+    font-size: 6.5rem;
+    font-weight: 500;
+}
+.service hr{
+    width:45%;
+    margin:2% 28%;
+    border:1px solid #00000011;
+}
+.service-info{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+.info{
+    padding:1rem 2rem;
+}
+.icon{
+    margin-top:-9%;
+    padding:3%;
+}
+.fa-solid{
+    font-size: 5.5rem;
+    color:#39b54a;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin:1.5vw 0;
+}
+.info p{
+    font-size: 1.8rem;
+    color:#757575;
+    width:95%;
+    line-height: 3.2rem;
+    font-family: "Lora", serif;
+}
 
 
 
@@ -238,17 +288,17 @@ hr{
 @media screen and (max-width:1200px) 
 {
     .logo img{
-        width:50%;
+        width:40%;
     }
     .main-nav h3{
-        font-size:2.5rem;
+        font-size:2rem;
     }
     .main-head{
-        transform: translate(15%,25%);
+        transform: translate(15%,10%);
     }
     h1{
-        font-size: 5.5vw;
-        line-height:8rem;
+        font-size: 4.5vw;
+        line-height:6.5rem;
     }
     .btn a{
         font-size: 1.5rem;
@@ -265,7 +315,7 @@ hr{
         width:55%;
     }
     #about{
-       padding:10% 4%;
+       padding:10% 4% 15% 4%;
     }
     .about-info h1{
         font-size: 8rem;
@@ -298,11 +348,14 @@ hr{
     .logo img{
         width:40%;
     }
+    #home{
+        padding-bottom:5%;
+    }
     .main-nav h3{
-        font-size:2rem;
+        font-size:1.5rem;
     }
     .main-head{
-        transform: translate(15%,15%);
+        transform: translate(15%,10%);
     }
     h1{
         font-size: 4.5vw;
@@ -323,7 +376,7 @@ hr{
          width:50%;
     }
     #about{
-        padding:9% 5%;
+        padding:8% 5% 15% 5%;
     }
     .about-info h1{
         font-size: 5.5rem;
@@ -358,8 +411,13 @@ hr{
     .counter:not(:last-child)::before{
         margin-left:10vw;
     }
-
-   
+    .service h1{
+        font-size:5rem;
+    }
+    .icon{
+        margin-top:-30%;
+        padding:3%;
+    }
 } 
 @media screen and (max-width:500px){
     .logo img{
@@ -439,7 +497,51 @@ hr{
     .counter h3{
         font-size: 2rem;
     }
-   
+    #Services{
+        padding:15% 2%;
+    }
+    .service-info{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        text-align: center;
+        justify-content:center;
+        width:100%;
+    }
+    .service h3{
+        font-size:1.5rem;
+    }
+    .service h1{
+        font-size: 3rem;
+        font-weight:600;
+        line-height: 3.8rem;
+    }
+    .service hr{
+        width:55%;
+        margin:5% 22%;
+        color:#0c0c0c;
+    }
+    .icon{
+        margin-top:5%;
+        padding:3%;
+    }
+    .fa-solid{
+        font-size: 5.5rem;
+        color:#39b54a;
+    }
+    h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin:1.5vw 0;
+    }
+    .info p{
+        font-size: 1.6rem;
+        color:#757575;
+        width:95%;
+        line-height: 3.2rem;
+        font-family: "Lora", serif;
+    }
+    
 
 } 
 @media screen and (max-width:400px){
