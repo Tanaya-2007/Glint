@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap');
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Montserrat", sans-serif;
+}
+
+
+html{
+font-size: 62.5%;
+}
+
+p{
+font-size: 1.6rem;
+line-height: 2.5rem;
+}
+
+#home{
+    background: linear-gradient(#000000a3,#00000092),url("./images/hero-bg.jpg.webp");
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+}
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:4rem 6rem;
+}
+.main-nav{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.logo img{
+    width:40%;
+}
+h1{
+    font-size: 5.5rem;
+    line-height: 8rem;
+    font-weight: 600;
+}
+
+.main-nav h3{
+    color:#39b54a;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    font-weight:500 ;
+    transition: all .9s ease;
+}
+.main-nav h3:hover{
+    color:#fff;
+}
+.hero-main
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.main-head{
+    transform: translate(30%,25%);
+}
+.main-head h3{
+    color:#ffffff7a;
+    padding-bottom:1rem;
+    letter-spacing: .2rem;
+    font-size:1.8rem;
+    font-weight: 600;
+}  
+.hamburger
+{
+    display: block;
+    cursor:pointer;
+    padding:1.8rem;
+}
+.hamburger .line
+{
+   width:25px;
+   height:2px;
+   background: #fefefe;
+    margin: 6px 0;
+    border-radius: 2px;
+ } 
+.nav-bar ul{
+    display: none;
+}
+.main-head h1{
+    color: #fff;
+}
+.btn{
+    margin:5rem 0;
+
+}
+.btn a{
+    font-size:1.2rem;
+    color:#fff;
+    border:2px solid #fff;
+    padding:15px 25px;
+    transition: all .9s ease;
+    letter-spacing: 3px;
+    font-weight:700;
+    margin:0 1.2rem;
+}
+.btn a:hover{
+    background-color: #fff;
+    color:#000;
+}
+.wrapper{
+    display: inline-flex;
+    flex-direction: column;
+    padding:0 5%;
+    padding-top: 15%;
+}
+.wrapper .icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    position: relative;
+    cursor:pointer;
+    z-index:2;
+}
+.wrapper .icon span{
+    height:30px;
+    width:30px;
+    position: relative;
+    display: block;
+    text-align: center;
+    z-index:2;
+    color:#fff;
+    margin:1rem 0;
+    border:2px solid #fff;
+    border-radius: 50%;
+}
+.wrapper .icon span i{
+    font-size: 15px;
+    line-height: 30px;
+}
+.wrapper .icon .tooltip{
+    color:#39b54a;
+    font-size:15px;
+    transform:translateX(0%);
+    position:absolute;
+    opacity:0;
+    font-weight:500;
+    pointer-events: none;
+    transition:all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .icon:hover .tooltip{
+    opacity: 1;
+    transform:translate(-100%);
+    pointer-events: auto;
+}
+/* About us */
+#about{
+    width:100%;
+    height:auto;
+    background-color: #39b54a;
+    padding:8%;
+}
+.about-info{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+.about-info h3,
+.counter h3{
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.about-info h1{
+    color:#fff;
+    font-size: 7.5rem;
+    margin-top:10px;
+}
+hr{
+    width:42%;
+    border:.5px solid #ffffff26;
+    margin:30px 0;
+}
+.about-info p{
+    font-family: "Lora", serif;
+    width:70%;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 4rem;
+}
+.counters{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:2rem;
+    text-align: center;
+}
+.counter{
+    width:100%;
+    text-align: center;
+    padding:0 1rem;
+}
+ .counter h1{
+    color:#fff;
+    font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    padding:1.8rem 0;
+}
+.counter:not(:last-child)::before{
+    content: '';
+    background-color: #ffffff3f;
+    position: absolute;
+    width:1px;
+    height:12rem;
+    margin-top:1.4vw;
+    margin-left:9vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) 
+{
+    .logo img{
+        width:50%;
+    }
+    .main-nav h3{
+        font-size:2.5rem;
+    }
+    .main-head{
+        transform: translate(15%,25%);
+    }
+    h1{
+        font-size: 5.5vw;
+        line-height:8rem;
+    }
+    .btn a{
+        font-size: 1.5rem;
+    }
+    .wrapper .icon span i{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .wrapper .icon span{
+        height:40px;
+        width:40px;
+    }
+    hr{
+        width:55%;
+    }
+    #about{
+       padding:10% 4%;
+    }
+    .about-info h1{
+        font-size: 8rem;
+    }
+    .about-info h3{
+        font-size: 2rem;
+    }
+    .about-info p{
+        width:85%;
+        padding:3rem 0;
+        font-size:3rem;
+    }
+    .counter h3{
+        font-size: 2rem;
+    }
+
+    .counter{
+        text-align: center;
+        padding:0 2.5rem;
+        width:100%;
+        height:2rem;
+    }
+    
+    .counter:not(:last-child)::before{
+        margin-left:10vw;
+    }
+
+}
+@media screen and (max-width:900px){
+    .logo img{
+        width:40%;
+    }
+    .main-nav h3{
+        font-size:2rem;
+    }
+    .main-head{
+        transform: translate(15%,15%);
+    }
+    h1{
+        font-size: 4.5vw;
+        line-height:6rem;
+    }
+    .btn a{
+        font-size: 1rem;
+    }
+    .wrapper .icon span i{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .wrapper .icon span{
+        height:32px;
+        width:30px;
+    }
+    hr{
+         width:50%;
+    }
+    #about{
+        padding:9% 5%;
+    }
+    .about-info h1{
+        font-size: 5.5rem;
+    }
+    .about-info h3{
+        font-size: 1.6rem;
+    }
+    .about-info p{
+        width:85%;
+        padding:.5rem 0;
+        font-size:2rem;
+    }
+    .counters{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .counter h1{
+        font-size:5.5rem;
+    }
+    .counter h3{
+        font-size: 1.5rem;
+    }
+ 
+    .counter{
+        text-align: center;
+        padding:0 2.5rem;
+        width:100%;
+        height:2rem;
+    }
+    
+    .counter:not(:last-child)::before{
+        margin-left:10vw;
+    }
+
+   
+} 
+@media screen and (max-width:500px){
+    .logo img{
+        width:30%;
+    }
+    .main-nav h3{
+        font-size:1.4rem;
+    }
+    .header{
+        padding:5vw 8vw;
+    }
+    .main-head h3{
+        font-size:1.5rem;
+        font-weight: 600;
+    } 
+    .main-head{
+        transform: translate(15%,15%);
+    }
+
+    h1{
+        font-size: 6.5vw;
+        line-height:5rem;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        width:50%;
+    }
+    .btn a{
+        font-size: 1rem;
+        margin:1rem 0;
+    }
+    .wrapper{
+        display: none;
+    }
+    #about{
+        padding:10% 2%;
+    }
+    .about-info h1{
+        font-size: 5rem;
+    }
+    .about-info h3{
+        font-size: 1.5rem;
+    }
+    hr{
+        width:60%;
+   }
+    .about-info p{
+        width:95%;
+        margin-bottom:0rem;
+        padding:.2rem 0;
+        line-height:3rem;
+        font-size:1.8rem;
+    }
+    .counters{
+        flex-direction: column;
+    }
+    .counter{
+        text-align: center;
+        padding: 1px;
+        width:100%;
+        height:15rem;
+    }
+     .counter:not(:last-child)::before{ 
+        content: ''; 
+        background-color: #ffffff27; 
+        position: absolute; 
+        width:40%; 
+        height:2px;
+        margin: 14rem 0;
+        margin-left:-8rem;
+    } 
+  
+    .counter h1{
+        font-size: 6rem;
+    }
+    .counter h3{
+        font-size: 2rem;
+    }
+   
+
+} 
+@media screen and (max-width:400px){
+    .logo img{
+        width:45%;
+    }
+    h1{
+        font-size: 7vw;
+        line-height:4rem;
+    }
+    .main-head{
+        transform: translate(8%,25%);
+    }
+    
+    .main-head h3{
+        font-size:1.3rem;
+    }
+    .btn{
+        width:60%;
+        margin-top:5vw;
+      
+    }
+    .btn a{
+        font-size: 1rem;
+        padding:15px 10px;
+        text-align: center;
+    }
+}
