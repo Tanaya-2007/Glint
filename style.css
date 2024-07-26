@@ -25,6 +25,7 @@ line-height: 2.5rem;
     background-size: cover;
     width:100%;
     height:auto;
+    padding-bottom:10%;
 }
 .header{
     display:flex;
