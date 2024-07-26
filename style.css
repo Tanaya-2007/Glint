@@ -24,6 +24,8 @@ line-height: 2.5rem;
     background-position: center;
     background-size: cover;
     width:100%;
+    height:auto;
+    padding-bottom:10%;
 }
 .header{
     display:flex;
@@ -567,5 +569,8 @@ h2{
         font-size: 1rem;
         padding:15px 10px;
         text-align: center;
+    }
+    #home{
+        padding-bottom:20%;
     }
 }
