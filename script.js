@@ -110,7 +110,6 @@ gsap.from(".service-info",{
   scrollTrigger:{
     trigger:"body",
     start:"60%",
-    end:"90%",
-    markers:true
+    end:"90%"
   }
 })
