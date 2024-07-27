@@ -194,6 +194,10 @@ hr{
     text-align: center;
     font-size: 2.2rem;
     line-height: 4rem;
+    overflow: hidden;
+}
+.about-info p span{
+    display: inline-block;
 }
 .counters{
     display:flex;
