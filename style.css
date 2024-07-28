@@ -277,6 +277,62 @@ h2{
     line-height: 3.2rem;
     font-family: "Lora", serif;
 }
+/* Work */
+#works{
+    background: #111111;
+    width:100%;
+    height: 100vh;
+    padding:8% 12%;
+}
+.work{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+}
+.work h3{
+    color:#39b54a;
+    letter-spacing: .4rem;
+    font-size: 1.5rem;
+}
+.work h1{
+    color:#fff;
+    width:80%;
+}
+.work hr{
+    margin-bottom: 8rem;
+}
+.work-info{
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+  
+}
+.img{
+    width: 100%;
+}
+img{
+    width:100%;
+    height: 100%;
+}
+ .first img{
+    height:60vh;
+    margin-top:-25%;
+} 
+.second img{
+    height:80vh;
+} 
+.third{
+    margin-top:-26%;
+}
+.fifth img{
+    margin-top:-30%;
+    /* height:60vh; */
+}
+.sixth img{
+    height:74vh;
+}
 
 
 
