@@ -111,3 +111,10 @@ gsap.from(".service-info",{
     end:"90%"
   }
 })
+
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
