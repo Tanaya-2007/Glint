@@ -112,9 +112,27 @@ gsap.from(".service-info",{
   }
 })
 
-var swiper = new Swiper(".mySwiper", {
+var mySwiper = new Swiper('.mySwiper', {
+  speed: 400,
+  spaceBetween: 100,
+  initialSlide: 0,
+  autoHeight: false,
+  direction: 'horizontal',
+  loop: true,
+
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     dynamicBullets: true,
+    clickable: true
   },
-});
+
+  autoplay: {
+    delay: 4000,
+    pauseOnMouseEnter: true,
+  },
+  centeredSlides: true,
+  slidesOffsetBefore: 0,
+  grabCursor: true,
+
+
+})
