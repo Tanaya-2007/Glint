@@ -113,8 +113,7 @@ gsap.from(".service-info",{
 })
 
 var mySwiper = new Swiper('.mySwiper', {
-  speed: 400,
-  spaceBetween: 100,
+  speed: 1000,
   initialSlide: 0,
   autoHeight: false,
   direction: 'horizontal',
@@ -130,9 +129,34 @@ var mySwiper = new Swiper('.mySwiper', {
     delay: 4000,
     pauseOnMouseEnter: true,
   },
-  centeredSlides: true,
+  // centeredSlides: true,
   slidesOffsetBefore: 0,
   grabCursor: true,
-
+  slidesPerView: 5,
+  breakpoints: {
+    0 : {
+      slidesPerView: 2,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  }
 
 })
+
+var swiper = new Swiper(".mySwiperOP", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
