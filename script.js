@@ -151,9 +151,12 @@ var mySwiper = new Swiper('.mySwiper', {
 })
 
 var swiper = new Swiper(".mySwiperOP", {
+  speed:1000,
+  loop:true,
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",
+  
   },
   navigation: {
     nextEl: ".swiper-button-next",

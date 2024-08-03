@@ -458,10 +458,17 @@ h2{
 
    
 .swiper-slide img{
-    width:200px;
+    width:150px;
     height:auto;
-    margin:0 3rem;
+    margin-top:3.5rem;
+    margin-left:-10rem;
+    opacity:0.5;
+    transition:all .9s ease;
 }
+.swiper-slide img:hover{
+    opacity:1;
+}
+
 :root {
     --swiper-pagination-color:#39b54a;
     --swiper-pagination-bullet-inactive-color: #5e5c5c8a;
@@ -508,13 +515,16 @@ h2{
     display: block;
     width: 8%;
     height: auto;
+    opacity:1;
+    margin:0;;
     border-radius: 50%;;
     object-fit: cover;
   }
-  img .swiper-button-next{
-    width:10%;
-    height: 100%;
+  .img-wid{
+    width:30px;
+    height:20px;
   }
+  
 
 
 
