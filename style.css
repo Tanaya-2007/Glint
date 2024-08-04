@@ -516,7 +516,7 @@ h2{
     width: 8%;
     height: auto;
     opacity:1;
-    margin:0;;
+    margin:0;
     border-radius: 50%;;
     object-fit: cover;
   }
@@ -525,14 +525,6 @@ h2{
     height:20px;
   }
   
-
-
-
-
-
-
-
-
 
 
 
@@ -809,7 +801,34 @@ h2{
         line-height: 3.2rem;
         font-family: "Lora", serif;
     }
-    
+    #works{
+        background: #111111;
+        width:100%;
+        padding:15% 8%;
+    }
+    .work h3{
+        color:#39b54a;
+        letter-spacing: .4rem;
+        font-size: 1.4rem;
+    }
+    .work h1{
+        color:#fff;
+        width:100%;
+        font-size: 2.8rem;
+    }
+    #clients{
+        padding:15% 8%;
+    }
+    #clients h1{
+        font-size: 2.8rem;
+    }
+    img.slide{
+        width:50%;
+    }
+    .mySwiper{
+        width:85%;
+    }
+
 
 } 
 @media screen and (max-width:400px){

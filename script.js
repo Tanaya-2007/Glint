@@ -16,6 +16,8 @@ Shery.mouseFollower({
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   duration: 1,
 });
+Ferro.mouseFollower(9, "10px",true);
+// Ferro.magnet(".logo img, h1",1)
 
 Shery.makeMagnet(".logo img,h1", {
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
@@ -138,7 +140,7 @@ var mySwiper = new Swiper('.mySwiper', {
       slidesPerView: 2,
     },
     480: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 3,
