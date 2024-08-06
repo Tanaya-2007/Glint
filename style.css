@@ -817,18 +817,53 @@ h2{
         font-size: 2.8rem;
     }
     #clients{
-        padding:15% 8%;
+        padding:15% 0;
     }
     #clients h1{
         font-size: 2.8rem;
     }
     img.slide{
-        width:50%;
+        width:55%;
     }
     .mySwiper{
-        width:85%;
+        width:120%;
+        padding-bottom:3rem;
     }
-
+   
+    .swiper-slideOP p{
+        width:85%;
+        font-size: 1.8rem;
+        text-align:center;
+        font-family: "Lora", serif;
+        color:#555555;
+        line-height:3rem;
+        margin-bottom:3rem;
+        margin-top:3rem;
+      }
+      .swiper-slideOP h4{
+        margin:1rem 0;
+      }
+     
+      .swiper-slideOP h5{
+        color:#555555;
+        font-weight:400;
+      }
+      .swiper-slideOP img {
+        display: block;
+        width: 30%;
+        height: auto;
+        opacity:1;
+        margin:0;
+        border-radius: 50%;;
+        object-fit: cover;
+      }
+      .img-wid{
+        width:20px;
+        height:10px;
+        margin-top:-25%;
+        margin-right:1rem;
+        margin-left:1rem;
+      }
 
 } 
 @media screen and (max-width:400px){
