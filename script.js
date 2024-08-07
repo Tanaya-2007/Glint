@@ -88,8 +88,7 @@ gsap.from(".service h1",{
   opacity:0,
   scrollTrigger:{
     trigger:".service h1",
-    start:"-50%",
-    markers:true
+    start:"-50%"
   }
 })
 
