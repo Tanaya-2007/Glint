@@ -11,17 +11,9 @@
 //     }   
 // } ,10)
 
-Shery.mouseFollower({
-  skew: true,
-  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-  duration: 1,
-});
-Ferro.mouseFollower(9, "10px",true);
 
-Shery.makeMagnet(".logo img,h1", {
-  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-  duration: 1,
-});
+Ferro.mouseFollower(1, "10px", true, ['h1','.logo img' ,'.hover-scale']);
+
 
 gsap.from(".main-head h1,.main-head h3",{
      y:250,
@@ -45,9 +37,9 @@ gsap.from(".about-info h1",{
     y:-100,
     opacity:0,
     scrollTrigger:{
-      trigger:"body",
-      start:"20%",
-      end:"30%"
+      trigger:".about-info h1",
+      start:"-140%",
+      end:"40%"
     }
 })
 function breakText() {
@@ -71,9 +63,9 @@ gsap.from("p span",{
   duration:0.9,
   stagger:0.1,
   scrollTrigger:{
-    trigger:"body",
-    start:"15%",
-    end:"35%",
+    trigger:".about-info",
+    start:"15% center",
+    end:"35% center",
     scrub:2
   }
 })
@@ -84,8 +76,10 @@ gsap.from(".counters",{
   opacity:0,
   duration:1,
   scrollTrigger:{
-    trigger:"body",
-    start:"35%"
+    trigger:".about-info",
+    start:"0%",
+    end:"50%"
+
   }
 })
 
@@ -93,8 +87,9 @@ gsap.from(".service h1",{
   y:-100,
   opacity:0,
   scrollTrigger:{
-    trigger:"body",
-    start:"50%"
+    trigger:".service h1",
+    start:"-50%",
+    markers:true
   }
 })
 
@@ -102,13 +97,12 @@ gsap.from(".service-info",{
   x:-300,
   y:-300,
   scale:0.2,
-  stagger:0.6,
+  stagger:0.9,
   opacity:0,
-  scrub:1,
   duration:1,
   scrollTrigger:{
-    trigger:"body",
-    start:"60%",
+    trigger:".service-info",
+    start:"10%",
     end:"90%"
   }
 })
